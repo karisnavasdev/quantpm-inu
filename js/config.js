@@ -5,7 +5,7 @@
    ========================================================================== */
 
 // Official X account.
-const X_URL = "https://x.com/quantuminucoin";
+const X_URL = "https://x.com/Quantuminu_X";
 
 // Ethereum contract address (CA). Leave "" until launch.
 // Once set, DexScreener chart + Uniswap buy links switch on.
