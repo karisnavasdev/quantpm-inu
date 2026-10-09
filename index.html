@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quantum Inu ($QI) | Ethereum Meme Coin</title>
+  <meta name="description" content="Tiny paws. Infinite possibilities. One quantum leap to the moon. Quantum Inu ($QI) on Ethereum." />
+  <meta name="theme-color" content="#02051c" />
+  <link rel="canonical" href="https://quantuminu.si/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Quantum Inu ($QI)" />
+  <meta property="og:description" content="Tiny paws. Infinite possibilities. One quantum leap to the moon." />
+  <meta property="og:url" content="https://quantuminu.si/" />
+  <meta property="og:image" content="https://quantuminu.si/assets/img/og-banner.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Quantum Inu ($QI)" />
+  <meta name="twitter:description" content="Tiny paws. Infinite possibilities. One quantum leap to the moon." />
+  <meta name="twitter:image" content="https://quantuminu.si/assets/img/og-banner.jpg" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Exo+2:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/logo.webp" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="fx-canvas" aria-hidden="true"></canvas>
+  <div class="bg-cosmos" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="bg-stars" aria-hidden="true"></div>
+  <div class="bg-warp" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#hero">
+      <span class="nav-logo"><img src="assets/img/logo.webp" alt="Quantum Inu logo" width="44" height="44" /></span>
+      <span class="nav-name">Quantum Inu</span>
+      <span class="nav-ticker">$QI</span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#howtobuy">How to Buy</a>
+      <a href="#chart">Chart</a>
+      <a href="#joinus">Join Us</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="icon-btn" data-link="x" target="_blank" rel="noopener" aria-label="Quantum Inu on X"><span class="svg-icon" data-svg="assets/icons/x.svg" data-mono></span></a>
+      <a class="btn btn-primary btn-sm" data-link="buy" target="_blank" rel="noopener"><span class="btn-label">Buy $QI</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-floaters" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">
+            <span class="svg-icon chain-icon" data-svg="assets/icons/ethereum.svg" data-mono></span>
+            <span data-bind="chainName">Ethereum</span>
+            <span class="pill-live">Meme Coin</span>
+          </p>
+          <h1 class="hero-title reveal" data-delay="60">
+            <span class="title-line" data-text="Quantum">Quantum</span>
+            <span class="title-line accent" data-text="Inu">Inu</span>
+          </h1>
+          <p class="hero-ticker reveal" data-delay="120"><span class="slash">/</span>$QI<span class="slash">/</span></p>
+          <p class="hero-desc reveal" data-delay="180" data-bind="description">Tiny paws. Infinite possibilities. One quantum leap to the moon.</p>
+          <div class="ca-box reveal" data-delay="240" data-copy-ca>
+            <span class="ca-label">CA</span>
+            <code class="ca-value" data-bind="contract">0xcomingsoon</code>
+            <button class="ca-copy" type="button" aria-label="Copy contract address">Copy</button>
+          </div>
+          <div class="hero-actions reveal" data-delay="300">
+            <a class="btn btn-primary magnetic" data-link="buy" target="_blank" rel="noopener"><span class="svg-icon dex-icon" data-svg="assets/icons/uniswap.svg" data-mono></span><span class="btn-label">Buy on Uniswap</span></a>
+            <a class="btn btn-ghost magnetic" data-link="dexscreener" target="_blank" rel="noopener"><span class="svg-icon" data-svg="assets/icons/dexscreener.svg" data-mono></span><span class="btn-label">DexScreener</span></a>
+            <a class="btn btn-ghost magnetic" data-link="x" target="_blank" rel="noopener"><span class="svg-icon" data-svg="assets/icons/x.svg" data-mono></span><span class="btn-label">Follow on X</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" data-delay="140">
+          <div class="orbit-ring r1" aria-hidden="true"></div>
+          <div class="orbit-ring r2" aria-hidden="true"></div>
+          <div class="orbit-ring r3" aria-hidden="true"></div>
+          <div class="orbit-dot d1" aria-hidden="true"></div>
+          <div class="orbit-dot d2" aria-hidden="true"></div>
+          <div class="orbit-dot d3" aria-hidden="true"></div>
+          <div class="hex-frame tilt" data-parallax="0.1">
+            <img class="hero-logo" src="assets/img/logo.webp" alt="Quantum Inu: blue cosmic star Shiba" width="670" height="679" />
+            <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span>
+          </div>
+          <div class="hud h1" aria-hidden="true"><small>state</small><b>superposition</b></div>
+          <div class="hud h2" aria-hidden="true"><small>vector</small><b>moonward</b></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" data-marquee></div></div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-art reveal">
+          <div class="media-169 holo">
+            <img data-slot="about" src="assets/gen/about-scene.webp" alt="Quantum Inu art" width="1280" height="720" />
+            <div class="scan" aria-hidden="true"></div>
+          </div>
+          <div class="about-badge spin-slow" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text><textPath href="#circ">QUANTUM INU * $QI * QUANTUM INU * $QI * </textPath></text></svg>
+            <img src="assets/img/logo.webp" alt="" width="74" height="74" />
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow reveal">About</p>
+          <h2 class="section-title reveal">What is <span class="grad-text">Quantum Inu</span>?</h2>
+          <p class="lead reveal" data-bind="description">Tiny paws. Infinite possibilities. One quantum leap to the moon.</p>
+          <p class="reveal" data-bind="aboutLong"></p>
+          <div class="stats reveal" data-stats></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="gallery" data-gallery></div>
+      </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <section id="howtobuy" class="section howtobuy">
+      <div class="container">
+        <p class="eyebrow reveal">How to Buy</p>
+        <h2 class="section-title reveal">Get <span class="grad-text">$QI</span> in four steps</h2>
+        <p class="section-sub reveal">Get ETH on Ethereum, open Uniswap, and take the leap.</p>
+        <div class="steps" data-steps></div>
+        <div class="partner-row reveal" data-partners></div>
+      </div>
+    </section>
+
+    <!-- CHART -->
+    <section id="chart" class="section chart">
+      <div class="container">
+        <p class="eyebrow reveal">Chart</p>
+        <h2 class="section-title reveal">Live <span class="grad-text">$QI</span> chart</h2>
+        <div class="chart-frame reveal">
+          <iframe id="dexscreener-embed" title="DexScreener chart" loading="lazy" src="about:blank" hidden></iframe>
+          <div class="chart-pending" id="chart-pending">
+            <svg class="big" viewBox="0 0 64 64" aria-hidden="true"><path fill="currentColor" d="M32 4l3.2 10.4L46 12l-6.4 8.8L52 28l-12.8 2.4L36 44l-4-12.8L20 44l-3.2-13.6L4 28l12.4-7.2L10 12l10.8 2.4z"/></svg>
+            <h3>Chart collapsing soon</h3>
+            <p>Contract address is not live yet. Follow Quantum Inu on X for the launch, then the DexScreener chart will appear here.</p>
+            <svg class="wave-svg" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true">
+              <path id="wave-a" d="M0 60 L600 60"></path>
+              <path id="wave-b" d="M0 60 L600 60"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN US (banner ONLY here, 3:1) -->
+    <section id="joinus" class="section joinus">
+      <div class="container">
+        <p class="eyebrow reveal">Join Us</p>
+        <h2 class="section-title reveal">Join the <span class="grad-text">Quantum Inu</span> pack</h2>
+        <p class="section-sub reveal">Tiny paws. Infinite possibilities. Leap with the pack.</p>
+        <div class="banner-wrap reveal tilt-soft">
+          <img class="banner-3x1" src="assets/img/banner.webp" alt="Quantum Inu banner" width="600" height="200" />
+          <div class="banner-shine" aria-hidden="true"></div>
+        </div>
+        <div class="social-row reveal">
+          <a class="social-card magnetic" data-link="x" target="_blank" rel="noopener"><span class="svg-icon" data-svg="assets/icons/x.svg" data-mono></span><span>Follow on X</span></a>
+          <a class="social-card magnetic" data-link="dexscreener" target="_blank" rel="noopener"><span class="svg-icon" data-svg="assets/icons/dexscreener.svg" data-mono></span><span>DexScreener</span></a>
+          <a class="social-card magnetic" data-link="buy" target="_blank" rel="noopener"><span class="svg-icon dex-icon" data-svg="assets/icons/uniswap.svg" data-mono></span><span class="btn-label" data-bind="dexName">Uniswap</span></a>
+          <a class="social-card magnetic" data-link="telegram" target="_blank" rel="noopener" hidden><span class="svg-icon" data-svg="assets/icons/telegram.svg" data-mono></span><span>Telegram</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><img src="assets/img/logo.webp" alt="" width="36" height="36" /><span>Quantum Inu</span></div>
+      <p class="disclaimer">$QI is a meme coin with no intrinsic value or expectation of financial return. It is for entertainment purposes only.</p>
+      <p class="copyright">&copy; <span data-year></span> Quantum Inu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" type="button" aria-label="Close">Close</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Previous"><span></span></button>
+    <figure class="lb-figure"><img id="lb-img" src="" alt="" /><figcaption id="lb-cap"></figcaption></figure>
+    <button class="lb-nav lb-next" type="button" aria-label="Next"><span></span></button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
